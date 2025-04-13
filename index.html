@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Ied Mubarak</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Idul Fitri 1446 H</h1>
+        <p>Mohon Maaf Lahir dan Batin</p>
+    </header>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#" onclick="showContent('home')">Home</a></li>
+                <li><a href="#" onclick="showContent('profile')">Profile</a></li>
+                <li><a href="#" onclick="showContent('memories')">Memories</a></li>
+                <li><a href="#" onclick="showContent('kontak')">Kontak</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <section id="home" class="active">
+                <h2>Selamat datang!</h2>
+                <p>Semoga Idul Fitri ini membawa kedamaian, kebahagiaan, dan keberkahan untuk kita semua.</p>
+                <img src="img/eid-mubarak-with-crescent-moon-and-mosque-vector.jpg" alt="Suasana Lebaran" style="width:400px; border-radius: 10px;">
+            </section>
+            <section id="profile" class="content-section">
+                <img src="img/Gambar WhatsApp 2025-03-09 pukul 14.21.07_4611e2c0.jpg" alt="Foto Profil" class="profile-img">
+                <h2>Hanifah Azzahra</h2>
+                <p>Assalamualaikum! Saya dan keluarga hanya ingin mengucapkan selamat Idul Fitri kepada semua teman - teman yang merayakan. Dan mari kita mulai lembaran baru dengan hati yang bersih.</p>
+            </section>
+            <section id="memories" class="content-section">
+                <h2>Kenangan Idul Fitri</h2>
+                <div class="memories-grid">
+                  <img src="img/Gambar WhatsApp 2025-04-04 pukul 17.06.11_842016b3.jpg" alt="Reuni">
+                  <p>Setelah sekian lama tidak pernah berjumpa dan berfoto dengan sahabat dari kecil.</p>
+                  <p>Finally, baru kesampaian lebaran tahun ini yaa</p>
+                </div>
+            </section>            
+            <section id="kontak" class="content-section">
+                <h2>Hubungi Saya</h2>
+                <form>
+                  <label>Nama:<br><input type="text" name="nama"></label><br><br>
+                  <label>Email:<br><input type="email" name="email"></label><br><br>
+                  <label>Pesan:<br><textarea name="pesan" rows="4"></textarea></label><br><br>
+                  <button type="submit">Kirim</button>
+                </form>
+                <p>Atau hubungi saya di media sosial: <br>📱 WhatsApp : 085264685390 | 📷 Instagram : hanifahazzahraa66</p>
+              </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 - Website Idul Fitri by Hanifah Azzahra 😊</p>
+    </footer>
+    <script>
+        function showContent(sectionId){
+            let sections = document.querySelectorAll('.content-section'); 
+            sections.forEach(section => section.style.display = 'none');  
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
